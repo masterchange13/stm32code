@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"wenshidapeng\startup_stm32f103xb.o"
+"wenshidapeng\main.o"
+"wenshidapeng\gpio.o"
+"wenshidapeng\adc.o"
+"wenshidapeng\stm32f1xx_it.o"
+"wenshidapeng\stm32f1xx_hal_msp.o"
+"wenshidapeng\stm32f1xx_hal_gpio_ex.o"
+"wenshidapeng\stm32f1xx_hal_adc.o"
+"wenshidapeng\stm32f1xx_hal_adc_ex.o"
+"wenshidapeng\stm32f1xx_hal.o"
+"wenshidapeng\stm32f1xx_hal_rcc.o"
+"wenshidapeng\stm32f1xx_hal_rcc_ex.o"
+"wenshidapeng\stm32f1xx_hal_gpio.o"
+"wenshidapeng\stm32f1xx_hal_dma.o"
+"wenshidapeng\stm32f1xx_hal_cortex.o"
+"wenshidapeng\stm32f1xx_hal_pwr.o"
+"wenshidapeng\stm32f1xx_hal_flash.o"
+"wenshidapeng\stm32f1xx_hal_flash_ex.o"
+"wenshidapeng\stm32f1xx_hal_exti.o"
+"wenshidapeng\stm32f1xx_hal_tim.o"
+"wenshidapeng\stm32f1xx_hal_tim_ex.o"
+"wenshidapeng\system_stm32f1xx.o"
+--strict --scatter "WenShiDaPeng\WenShiDaPeng.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "WenShiDaPeng.map" -o WenShiDaPeng\WenShiDaPeng.axf

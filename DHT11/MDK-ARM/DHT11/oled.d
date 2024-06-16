@@ -1,0 +1,10 @@
+dht11\oled.o: ..\driver\OLED.c
+dht11\oled.o: D:\download\keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h
+dht11\oled.o: .\RTE\_DHT11\RTE_Components.h
+dht11\oled.o: ../Drivers/CMSIS/Include/core_cm3.h
+dht11\oled.o: D:\download\keil\ARM\ARMCC\Bin\..\include\stdint.h
+dht11\oled.o: ../Drivers/CMSIS/Include/cmsis_version.h
+dht11\oled.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+dht11\oled.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+dht11\oled.o: D:\download\keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include\system_stm32f10x.h
+dht11\oled.o: ..\driver\OLED_Font.h

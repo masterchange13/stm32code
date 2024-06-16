@@ -1,0 +1,207 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=JL28G-V1CE0-BS8YX-H0ER8-NM03E-709HJ
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  D:\download\keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\MicroController\stm32Code\DHT11\MDK-ARM\DHT11.uvprojx
+Project File Date:  06/15/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\download\keil\ARM\ARMCC\Bin'
+Build target 'DHT11'
+assembling startup_stm32f103xb.s...
+compiling stm32f1xx_it.c...
+compiling main.c...
+compiling gpio.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling Key.c...
+..\driver\Key.c(2): error:  #5: cannot open source input file "Delay.h": No such file or directory
+  #include "Delay.h"
+..\driver\Key.c: 0 warnings, 1 error
+compiling stm32f1xx_hal_tim.c...
+compiling LED.c...
+..\driver\LED.c(5): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
+  	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+..\driver\LED.c(5): error:  #20: identifier "RCC_APB2Periph_GPIOA" is undefined
+  	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+..\driver\LED.c(7): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+  	GPIO_InitTypeDef GPIO_InitStructure;
+..\driver\LED.c(8): error:  #20: identifier "GPIO_Mode_Out_PP" is undefined
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+..\driver\LED.c(9): error:  #20: identifier "GPIO_Pin_1" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1 | GPIO_Pin_2;
+..\driver\LED.c(9): error:  #20: identifier "GPIO_Pin_2" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1 | GPIO_Pin_2;
+..\driver\LED.c(10): error:  #20: identifier "GPIO_Speed_50MHz" is undefined
+  	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+..\driver\LED.c(11): warning:  #223-D: function "GPIO_Init" declared implicitly
+  	GPIO_Init(GPIOA, &GPIO_InitStructure);
+..\driver\LED.c(13): warning:  #223-D: function "GPIO_SetBits" declared implicitly
+  	GPIO_SetBits(GPIOA, GPIO_Pin_1 | GPIO_Pin_2);
+..\driver\LED.c(18): warning:  #223-D: function "GPIO_ResetBits" declared implicitly
+  	GPIO_ResetBits(GPIOA, GPIO_Pin_1);
+..\driver\LED.c(18): error:  #20: identifier "GPIO_Pin_1" is undefined
+  	GPIO_ResetBits(
+PIOA, GPIO_Pin_1);
+..\driver\LED.c(23): warning:  #223-D: function "GPIO_SetBits" declared implicitly
+  	GPIO_SetBits(GPIOA, GPIO_Pin_1);
+..\driver\LED.c(23): error:  #20: identifier "GPIO_Pin_1" is undefined
+  	GPIO_SetBits(
+PIOA, GPIO_Pin_1);
+..\driver\LED.c(28): warning:  #223-D: function "GPIO_ReadOutputDataBit" declared implicitly
+  	if (GPIO_ReadOutputDataBit(GPIOA, GPIO_Pin_1) == 0)
+..\driver\LED.c(28): error:  #20: identifier "GPIO_Pin_1" is undefined
+  	if (GPIO_ReadOutputDataBit(
+PIOA, GPIO_Pin_1) == 0)
+..\driver\LED.c(30): warning:  #223-D: function "GPIO_SetBits" declared implicitly
+  		GPIO_SetBits(GPIOA, GPIO_Pin_1);
+..\driver\LED.c(34): warning:  #223-D: function "GPIO_ResetBits" declared implicitly
+  		GPIO_ResetBits(GPIOA, GPIO_Pin_1);
+..\driver\LED.c(40): warning:  #223-D: function "GPIO_ResetBits" declared implicitly
+  	GPIO_ResetBits(GPIOA, GPIO_Pin_2);
+..\driver\LED.c(40): error:  #20: identifier "GPIO_Pin_2" is undefined
+  	GPIO_ResetBits(
+PIOA, GPIO_Pin_2);
+..\driver\LED.c(45): warning:  #223-D: function "GPIO_SetBits" declared implicitly
+  	GPIO_SetBits(GPIOA, GPIO_Pin_2);
+..\driver\LED.c(45): error:  #20: identifier "GPIO_Pin_2" is undefined
+  	GPIO_SetBits(
+PIOA, GPIO_Pin_2);
+..\driver\LED.c(50): warning:  #223-D: function "GPIO_ReadOutputDataBit" declared implicitly
+  	if (GPIO_ReadOutputDataBit(GPIOA, GPIO_Pin_2) == 0)
+..\driver\LED.c(50): error:  #20: identifier "GPIO_Pin_2" is undefined
+  	if (GPIO_ReadOutputDataBit(
+PIOA, GPIO_Pin_2) == 0)
+..\driver\LED.c(52): warning:  #223-D: function "GPIO_SetBits" declared implicitly
+  		GPIO_SetBits(GPIOA, GPIO_Pin_2);
+..\driver\LED.c(56): warning:  #223-D: function "GPIO_ResetBits" declared implicitly
+  		GPIO_ResetBits(GPIOA, GPIO_Pin_2);
+..\driver\LED.c: 13 warnings, 12 errors
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal_msp.c...
+compiling OLED.c...
+..\driver\OLED.c(11): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
+      RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+..\driver\OLED.c(11): error:  #20: identifier "RCC_APB2Periph_GPIOB" is undefined
+      RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+..\driver\OLED.c(13): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+  	GPIO_InitTypeDef GPIO_InitStructure;
+..\driver\OLED.c(14): error:  #20: identifier "GPIO_Mode_Out_OD" is undefined
+   	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_OD;
+..\driver\OLED.c(15): error:  #20: identifier "GPIO_Speed_50MHz" is undefined
+  	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+..\driver\OLED.c(16): error:  #20: identifier "GPIO_Pin_8" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8;
+..\driver\OLED.c(17): warning:  #223-D: function "GPIO_Init" declared implicitly
+   	GPIO_Init(GPIOB, &GPIO_InitStructure);
+..\driver\OLED.c(18): error:  #20: identifier "GPIO_Pin_9" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;
+..\driver\OLED.c(21): warning:  #223-D: function "GPIO_WriteBit" declared implicitly
+  	
+LED_W_SCL(1);
+..\driver\OLED.c(21): error:  #20: identifier "BitAction" is undefined
+  	
+LED_W_SCL(1);
+..\driver\OLED.c(32): warning:  #223-D: function "GPIO_WriteBit" declared implicitly
+  	
+LED_W_SDA(1);
+..\driver\OLED.c(32): error:  #20: identifier "GPIO_Pin_9" is undefined
+  	
+LED_W_SDA(1);
+..\driver\OLED.c(32): error:  #20: identifier "BitAction" is undefined
+  	
+LED_W_SDA(1);
+..\driver\OLED.c(33): error:  #20: identifier "GPIO_Pin_8" is undefined
+  	
+LED_W_SCL(1);
+..\driver\OLED.c(45): warning:  #223-D: function "GPIO_WriteBit" declared implicitly
+  	
+LED_W_SDA(0);
+..\driver\OLED.c(45): error:  #20: identifier "GPIO_Pin_9" is undefined
+  	
+LED_W_SDA(0);
+..\driver\OLED.c(45): error:  #20: identifier "BitAction" is undefined
+  	
+LED_W_SDA(0);
+..\driver\OLED.c(46): error:  #20: identifier "GPIO_Pin_8" is undefined
+  	
+LED_W_SCL(1);
+..\driver\OLED.c(60): warning:  #223-D: function "GPIO_WriteBit" declared implicitly
+  		
+LED_W_SDA(Byte & (0x80 >> i));
+..\driver\OLED.c(60): error:  #20: identifier "GPIO_Pin_9" is undefined
+  		
+LED_W_SDA(Byte & (0x80 >> i));
+..\driver\OLED.c(60): error:  #20: identifier "BitAction" is undefined
+  		
+LED_W_SDA(Byte & (0x80 >> i));
+..\driver\OLED.c(61): error:  #20: identifier "GPIO_Pin_8" is undefined
+  		
+LED_W_SCL(1);
+..\driver\OLED.c(64): warning:  #223-D: function "GPIO_WriteBit" declared implicitly
+  	
+LED_W_SCL(1);	//额外的一个时钟，不处理应答信�?
+..\driver\OLED.c(64): error:  #20: identifier "GPIO_Pin_8" is undefined
+  	
+LED_W_SCL(1);	//额外的一个时钟，不处理应答信�?
+..\driver\OLED.c(64): error:  #20: identifier "BitAction" is undefined
+  	
+LED_W_SCL(1);	//额外的一个时钟，不处理应答信�?
+..\driver\OLED.c: 7 warnings, 18 errors
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_exti.c...
+compiling system_stm32f1xx.c...
+"DHT11\DHT11.axf" - 31 Error(s), 20 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM.CMSIS.5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_DHT11
+  D:\download\keil\ARM\CMSIS\5.0.1\CMSIS\Include
+  D:\download\keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Target not created.
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>

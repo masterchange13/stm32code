@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"rubuishbin_sg90\startup_stm32f103xb.o"
+"rubuishbin_sg90\main.o"
+"rubuishbin_sg90\gpio.o"
+"rubuishbin_sg90\tim.o"
+"rubuishbin_sg90\stm32f1xx_it.o"
+"rubuishbin_sg90\stm32f1xx_hal_msp.o"
+"rubuishbin_sg90\stm32f1xx_hal_gpio_ex.o"
+"rubuishbin_sg90\stm32f1xx_hal_tim.o"
+"rubuishbin_sg90\stm32f1xx_hal_tim_ex.o"
+"rubuishbin_sg90\stm32f1xx_hal.o"
+"rubuishbin_sg90\stm32f1xx_hal_rcc.o"
+"rubuishbin_sg90\stm32f1xx_hal_rcc_ex.o"
+"rubuishbin_sg90\stm32f1xx_hal_gpio.o"
+"rubuishbin_sg90\stm32f1xx_hal_dma.o"
+"rubuishbin_sg90\stm32f1xx_hal_cortex.o"
+"rubuishbin_sg90\stm32f1xx_hal_pwr.o"
+"rubuishbin_sg90\stm32f1xx_hal_flash.o"
+"rubuishbin_sg90\stm32f1xx_hal_flash_ex.o"
+"rubuishbin_sg90\stm32f1xx_hal_exti.o"
+"rubuishbin_sg90\system_stm32f1xx.o"
+"rubuishbin_sg90\driver_sr04.o"
+--strict --scatter "RubuishBin_SG90\RubuishBin_SG90.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RubuishBin_SG90.map" -o RubuishBin_SG90\RubuishBin_SG90.axf

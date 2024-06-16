@@ -1,0 +1,130 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=JL28G-V1CE0-BS8YX-H0ER8-NM03E-709HJ
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  D:\download\keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\MicroController\stm32Code\WenShiDaPeng\MDK-ARM\WenShiDaPeng.uvprojx
+Project File Date:  06/15/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\download\keil\ARM\ARMCC\Bin'
+Build target 'WenShiDaPeng'
+compiling dht11.c...
+..\driver\dht11.c(1): error:  #5: cannot open source input file "dht11.h": No such file or directory
+  #include "dht11.h"
+..\driver\dht11.c: 0 warnings, 1 error
+compiling OLED.c...
+..\driver\OLED.c(11): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
+      RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+..\driver\OLED.c(11): error:  #20: identifier "RCC_APB2Periph_GPIOB" is undefined
+      RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+..\driver\OLED.c(13): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+  	GPIO_InitTypeDef GPIO_InitStructure;
+..\driver\OLED.c(14): error:  #20: identifier "GPIO_Mode_Out_OD" is undefined
+   	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_OD;
+..\driver\OLED.c(15): error:  #20: identifier "GPIO_Speed_50MHz" is undefined
+  	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+..\driver\OLED.c(16): error:  #20: identifier "GPIO_Pin_8" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8;
+..\driver\OLED.c(17): warning:  #223-D: function "GPIO_Init" declared implicitly
+   	GPIO_Init(GPIOB, &GPIO_InitStructure);
+..\driver\OLED.c(18): error:  #20: identifier "GPIO_Pin_9" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;
+..\driver\OLED.c(21): warning:  #223-D: function "GPIO_WriteBit" declared implicitly
+  	
+LED_W_SCL(1);
+..\driver\OLED.c(21): error:  #20: identifier "BitAction" is undefined
+  	
+LED_W_SCL(1);
+..\driver\OLED.c(32): warning:  #223-D: function "GPIO_WriteBit" declared implicitly
+  	
+LED_W_SDA(1);
+..\driver\OLED.c(32): error:  #20: identifier "GPIO_Pin_9" is undefined
+  	
+LED_W_SDA(1);
+..\driver\OLED.c(32): error:  #20: identifier "BitAction" is undefined
+  	
+LED_W_SDA(1);
+..\driver\OLED.c(33): error:  #20: identifier "GPIO_Pin_8" is undefined
+  	
+LED_W_SCL(1);
+..\driver\OLED.c(45): warning:  #223-D: function "GPIO_WriteBit" declared implicitly
+  	
+LED_W_SDA(0);
+..\driver\OLED.c(45): error:  #20: identifier "GPIO_Pin_9" is undefined
+  	
+LED_W_SDA(0);
+..\driver\OLED.c(45): error:  #20: identifier "BitAction" is undefined
+  	
+LED_W_SDA(0);
+..\driver\OLED.c(46): error:  #20: identifier "GPIO_Pin_8" is undefined
+  	
+LED_W_SCL(1);
+..\driver\OLED.c(60): warning:  #223-D: function "GPIO_WriteBit" declared implicitly
+  		
+LED_W_SDA(Byte & (0x80 >> i));
+..\driver\OLED.c(60): error:  #20: identifier "GPIO_Pin_9" is undefined
+  		
+LED_W_SDA(Byte & (0x80 >> i));
+..\driver\OLED.c(60): error:  #20: identifier "BitAction" is undefined
+  		
+LED_W_SDA(Byte & (0x80 >> i));
+..\driver\OLED.c(61): error:  #20: identifier "GPIO_Pin_8" is undefined
+  		
+LED_W_SCL(1);
+..\driver\OLED.c(64): warning:  #223-D: function "GPIO_WriteBit" declared implicitly
+  	
+LED_W_SCL(1);	//额外的一个时钟，不处理应答信�?
+..\driver\OLED.c(64): error:  #20: identifier "GPIO_Pin_8" is undefined
+  	
+LED_W_SCL(1);	//额外的一个时钟，不处理应答信�?
+..\driver\OLED.c(64): error:  #20: identifier "BitAction" is undefined
+  	
+LED_W_SCL(1);	//额外的一个时钟，不处理应答信�?
+..\driver\OLED.c: 7 warnings, 18 errors
+"WenShiDaPeng\WenShiDaPeng.axf" - 19 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM.CMSIS.5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_WenShiDaPeng
+  D:\download\keil\ARM\CMSIS\5.0.1\CMSIS\Include
+  D:\download\keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Target not created.
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
