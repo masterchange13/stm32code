@@ -11,7 +11,7 @@ VRY - A1
 
 SW - PB12
 
-5V- 5V
+3.3V- 3.3V
 
 GND - GND
 
